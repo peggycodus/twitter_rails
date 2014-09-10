@@ -1,0 +1,12 @@
+<h1>Users Listing</h1>
+
+<table>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <tr><td><%=h user.name %></td><td><%=h user.email %></td></tr>
+      </tr>
+    <% end %>
+    <%= paginate @users %>
+  </tbody>
+</table>

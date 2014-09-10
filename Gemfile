@@ -12,6 +12,7 @@ gem 'paperclip'
 gem 'devise'
 gem 'letter_opener'
 gem 'kaminari'
+gem 'bcrypt-ruby'
 
 group :development do
   gem 'better_errors'
@@ -26,5 +27,7 @@ end
 group :test do
   gem 'shoulda-matchers'
   gem 'capybara'
+  gem 'cucumber-rails' , :require => false
+  gem 'database_cleaner'
   gem 'pry'
 end
